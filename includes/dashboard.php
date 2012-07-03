@@ -378,17 +378,22 @@ function wp_dashboard_right_now() {
 
 		$switch_themes = $theme->display('Name');
 		if ( current_user_can( 'switch_themes') )
-			$switch_themes = '<a href="themes.php">' . $switch_themes . '</a>';
+			//$switch_themes = '<a href="themes.php">' . $switch_themes . '</a>';
+                        $xyz = 99;
 		if ( current_user_can( 'edit_theme_options' ) ) {
-			printf(_n('Theme <span class="b">%1$s</span> with <span class="b"><a href="widgets.php">%2$s Widget</a></span>', 'Theme <span class="b">%1$s</span> with <span class="b"><a href="widgets.php">%2$s Widgets</a></span>', $num_widgets), $switch_themes, $num);
+			//printf(_n('Theme <span class="b">%1$s</span> with <span class="b"><a href="widgets.php">%2$s Widget</a></span>', 'Theme <span class="b">%1$s</span> with <span class="b"><a href="widgets.php">%2$s Widgets</a></span>', $num_widgets), $switch_themes, $num);
+                        $xyz = 99;
 		} else {
-			printf(_n('Theme <span class="b">%1$s</span> with <span class="b">%2$s Widget</span>', 'Theme <span class="b">%1$s</span> with <span class="b">%2$s Widgets</span>', $num_widgets), $switch_themes, $num);
+			//printf(_n('Theme <span class="b">%1$s</span> with <span class="b">%2$s Widget</span>', 'Theme <span class="b">%1$s</span> with <span class="b">%2$s Widgets</span>', $num_widgets), $switch_themes, $num);
+                        $xyz = 99;
 		}
 	} else {
 		if ( current_user_can( 'switch_themes' ) )
-			printf( __('Theme <span class="b"><a href="themes.php">%1$s</a></span>'), $theme->display('Name') );
+			//printf( __('Theme <span class="b"><a href="themes.php">%1$s</a></span>'), $theme->display('Name') );
+                        $xyz = 99;
 		else
-			printf( __('Theme <span class="b">%1$s</span>'), $theme->display('Name') );
+			//printf( __('Theme <span class="b">%1$s</span>'), $theme->display('Name') );
+                        $xyz = 99;
 	}
 	echo '</p>';
 
