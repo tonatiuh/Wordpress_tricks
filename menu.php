@@ -123,12 +123,12 @@ unset($ptype, $ptype_obj, $ptype_class, $ptype_for_id, $ptype_menu_position, $me
 $menu[59] = array( '', 'read', 'separator2', '', 'wp-menu-separator' );
 
 if ( current_user_can( 'switch_themes') ) {
-	$menu[60] = array( __('Appearance'), 'switch_themes', 'themes.php', '', 'menu-top menu-icon-appearance', 'menu-appearance', 'div' );
+	//$menu[60] = array( __('Appearance'), 'switch_themes', 'themes.php', '', 'menu-top menu-icon-appearance', 'menu-appearance', 'div' );
 		$submenu['themes.php'][5]  = array(__('Themes'), 'switch_themes', 'themes.php');
 		if ( current_theme_supports( 'menus' ) || current_theme_supports( 'widgets' ) )
 			$submenu['themes.php'][10] = array(__('Menus'), 'edit_theme_options', 'nav-menus.php');
 } else {
-	$menu[60] = array( __('Appearance'), 'edit_theme_options', 'themes.php', '', 'menu-top menu-icon-appearance', 'menu-appearance', 'div' );
+	//$menu[60] = array( __('Appearance'), 'edit_theme_options', 'themes.php', '', 'menu-top menu-icon-appearance', 'menu-appearance', 'div' );
 		$submenu['themes.php'][5]  = array(__('Themes'), 'edit_theme_options', 'themes.php');
 		if ( current_theme_supports( 'menus' ) || current_theme_supports( 'widgets' ) )
 			$submenu['themes.php'][10] = array(__('Menus'), 'edit_theme_options', 'nav-menus.php' );
